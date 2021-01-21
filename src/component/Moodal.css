@@ -1,0 +1,42 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.modal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-170px);
+    width: 350px;
+    height: 400px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+.imgDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 370px;
+    transform: translateY(-110px);
+}
+.imgDiv img{
+    width: 350px;
+    height: 355px;
+    transform: translateY(-5px) translateX(-2px);
+}
+@media screen and (max-width:520px){
+    .imgDiv{
+        width: 100%;
+        height: 100%;
+    }
+    .imgDiv img{
+        transform: translateY(-15px) translateX(-2px);
+    }
+   
+}

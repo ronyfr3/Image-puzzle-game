@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+
+.stopwatch-card {
+  position: absolute;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 40%;
+  height: 130px;
+  top: 110px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+p {
+  transform: translateY(15px);
+  font-size: 28px;
+  font-weight: 700;
+}
+
+
+.btn1 {
+  width: 100%;
+  outline: none;
+  background: transparent;
+  border: 1px solid rgba(0,0,0,0.8);
+  padding: 5px 10px;
+  border-radius: 7px;
+  color: rgba(0,0,0,0.8);
+  cursor: pointer;
+  font-weight: 700;
+  margin: 5px;
+}
+.btn1:hover{
+  background-color: rgb(52, 52, 134);
+  color: white;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+  width: 150px;
+  margin: 0 auto;
+  margin-top: 5px;
+}
+
+@media screen and (max-width:520px){
+  .stopwatch-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+    height: 70px;
+    top: 40px;
+  }
+  p {
+    transform: translateY(10px);
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .btn1{
+      font-size: 14px;
+      transform: translateY(-11px);
+      padding: 2px;
+  }
+}
